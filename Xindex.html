@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohit Verma">
+    <meta name="description" content="Notes-Website">
+    <title>We Takes Notes</title>
+    <link rel="stylesheet" href="Xstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="img/sticky-notes.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+     <article id="first">
+        <div class="nav">
+          <div class="logo"><h2><a href="#">WE TAKE NOTES</a></h2></div>
+          <ul class="links">
+            <li><a href="P_index.html"><ion-icon name="bulb-outline"></ion-icon>Physics  </a></li>
+            <li><a href="C_index.html"><ion-icon name="flame-outline"></ion-icon>Chemistry  </a></li>
+            <li><a href="M_index.html"><ion-icon name="calculator-outline"></ion-icon>Maths  </a></li>
+            
+          </ul>
+           <a href="" class="action"> Add Notes</a>
+          <div class="butn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="dropdown_menu">
+          <ul>
+            <li><a href="P_index.html"><ion-icon name="bulb-outline"></ion-icon>Physics</a></li>
+            <li><a href="C_index.html"><ion-icon name="flame-outline"></ion-icon>Chemistry</a></li>
+            <li><a href="M_index.html"><ion-icon name="calculator-outline"></ion-icon>Maths</a></li>
+            <li><a href="" class="action">Add Notes</a></li>
+          </ul>
+        </div>
+      </article>
+    </header>
+    <main>
+      <section class="oo">
+        <h1>Welcome To <br>We Take Notes</h1> 
+        <p>This Website is still in making, things here will be updated soon.</p> 
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quia iure voluptatibus aperiam sed ab necessitatibus dolorem architecto atque optio iusto, nisi, inventore consectetur quaerat quibusdam natus, illum distinctio maiores?
+        </p>
+      </section> 
+    </main>
+    <script>
+      const toggleBtn = document.querySelector('.butn')
+      const toggleBtnIcon = document.querySelector('.butn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+  
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+  
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
